@@ -824,7 +824,7 @@ function AuthPage({ mode, onNavigate, onAuth }) {
 
 // ── REPLACE THIS WITH YOUR NEW API KEY (not the one shared in chat!) ──
 const GEMINI_API_KEY = typeof window !== "undefined" && process.env.NEXT_PUBLIC_GEMINI_API_KEY || "";
-const GEMINI_MODEL = "gemini-2.5-flash-preview-image";
+const GEMINI_MODEL = "gemini-2.5-flash-image";
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
 
 // System prompts per mode
